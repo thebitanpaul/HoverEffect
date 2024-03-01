@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>phiUture: Makes you futureProof</h1>
+    <h3>Here are some of the software solutions from the phiUture company: </h2>
+</head>
+<body>
+    <style>
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: row;
+        max-height: 200vh;
+      }
+      
+      .image-container {
+        position: relative;
+        margin: 10px;
+        width: 300px; 
+      }
+      
+      .image-container img {
+        width: 100%;
+        max-width: 100%;
+        border: 3px solid #000;
+        box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+        transition: transform 0.8s ease;
+      }
+      
+      .image-container .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: transform 0.8s ease, opacity 0.3s; 
+        opacity: 0; 
+      }
+      
+      .image-container:hover img {
+        transform: rotateY(180deg); 
+      }
+      
+      .image-container:hover .text {
+        transform: rotateY(0); 
+        opacity: 1; 
+      }
+      </style>
+
+      <main class="cards">
+        <div class="image-container">
+          <img src="https://cdn.sanity.io/images/tlr8oxjg/production/22c3b048689e6b8cd048157c7eb3c01cce769a41-1456x816.png?w=3840&q=100&fit=clip&auto=format" alt="DataAnalyzerAi">
+          <div class="text">
+            <h2>Data Analyzer Ai</h2>
+            <p>It's an app from the phiUture company which analyse data with Ai tech. Link: https://dataanalyzerai.streamlit.app/</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://www.searchenginejournal.com/wp-content/uploads/2021/02/seo-content-marketer-60379220866ed.png" alt="aiStoryTelling">
+          <div class="text">
+            <h2>aiStoryTelling</h2>
+            <p>It's an app from the phiUture company which helps in content writing with Ai tech. Link: https://aistorytellingapp.streamlit.app/</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://blog.hubspot.com/hs-fs/hubfs/280_How-to-Edit-PDF.png?width=595&height=400&name=280_How-to-Edit-PDF.png" alt="aiScholar">
+          <div class="text">
+            <h2>aiScolar</h2>
+            <p>It's an app from the phiUture company which can read pdf and answer from that with Ai tech. Link: https://aischolar.streamlit.app/</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://fitlifepursuits.com/wp-content/uploads/2016/05/Drink-More-Water.jpg" alt="DailyWaterDrinking">
+          <div class="text">
+            <h2>DailyWaterDrinking</h2>
+            <p>It's an app from the phiUture company which helps users to keep track of their daily water intake. Link:
+            https://thebitanpaul.github.io/DailyWaterDrinking/</p>
+          </div>
+        </div>
+        
+        </main>
+
+</body>
+</html>
+
